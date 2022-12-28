@@ -1,9 +1,9 @@
 <script>
 	let titles = [
-		{ id: 1, text: "Designing bigger widgets and visualizing interactions" },
-		{ id: 2, text: "Make widgets bigger and visualize interactions" },
-		{ id: 3, text: "Widgets and interactions" },
-		{ id: 4, text: "Big widgets and visualized interactions" },
+		{ id: 1, text: "Designing bigger widgets and visualizing interactions", name: "Gerund format" },
+		{ id: 2, text: "Make widgets bigger and visualize interactions", name: "Verb format" },
+		{ id: 3, text: "Widgets and interactions", name: "Short noun" },
+		{ id: 4, text: "Big widgets and visualized interactions", name: "Long noun" },
 	];
 	let images = [
 		{ id: 1 },
@@ -12,9 +12,9 @@
 		{ id: 4 },
 	];
 	let descriptions = [
-		{ id: 1, text: "This study shows that people prefer and perform better with larger or medium-sized widgets, such as radio buttons, which provide feedback to the user. Designers should take this into account when designing widgets for touch screen interfaces of mobile devices." },
-		{ id: 2, text: "This study revealed that the target low-literacy population can effectively use GUI widgets and navigation structures on touch screen interfaces. People prefer bigger or medium-sized widgets, and radio buttons work best due to their feedback mechanism. Designers should therefore create widgets that are bigger in size and provide visual feedback to users." },
-		{ id: 3, text: "Despite the mixed performance, we had a good response from participants on the usefulness of the cross-linked navigation bar. One participant commented, “I would rather use the small pictures on the top to save me from going HOME every time.” Another said, “The tabs were not big enough but they were helpful in giving options.” One more said, “It challenged me to think more about what I was doing.” (p. 98)" }
+		{ id: 1, name: "Short", text: "This study shows that people prefer and perform better with larger or medium-sized widgets, such as radio buttons, which provide feedback to the user. Designers should take this into account when designing widgets for touch screen interfaces of mobile devices." },
+		{ id: 2, name: "Long", text: "This study revealed that the target low-literacy population can effectively use GUI widgets and navigation structures on touch screen interfaces. People prefer bigger or medium-sized widgets, and radio buttons work best due to their feedback mechanism. Designers should therefore create widgets that are bigger in size and provide visual feedback to users." },
+		{ id: 3, name: "Reference", text: "Despite the mixed performance, we had a good response from participants on the usefulness of the cross-linked navigation bar. One participant commented, “I would rather use the small pictures on the top to save me from going HOME every time.” Another said, “The tabs were not big enough but they were helpful in giving options.” One more said, “It challenged me to think more about what I was doing.” (p. 98)" }
 		
 	];
 	var title_selection = titles[0];
@@ -31,7 +31,7 @@
 	<select bind:value={title_selection}>
 		{#each titles as title}
 			<option value={title}>
-				Title {title.id}
+				{title.name} title
 			</option>
 		{/each}
 	</select>
@@ -45,7 +45,7 @@
 	<select bind:value={description_selection}>
 		{#each descriptions as description}
 			<option value={description}>
-				Description {description.id}
+				{description.name} description
 			</option>
 		{/each}
 	</select>
