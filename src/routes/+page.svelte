@@ -5,11 +5,17 @@
 		{ id: 3, text: "Widgets and interactions", name: "Short noun" },
 		{ id: 4, text: "Big widgets and visualized interactions", name: "Long noun" },
 	];
+	let design_implications = [
+		{ id: 1, name: "Short", text: "When designing for low-literacy population, widgets should be bigger and interactions should be visualized." },
+		{ id: 2, name: "Mid-length", text: "Designers should design widgets that are bigger in size and allow the user to visualize interactions while designing for low-literacy population." },
+		{ id: 3, name: "Long", text: "Given that low-literacy population in this study preferred bigger widgets, such as radio buttons, and visualized interactions, designers should consider including bigger widgets and interaction visualization in their design." }
+		
+	];
 	let images = [
-		{ id: 1 },
-		{ id: 2 },
-		{ id: 3 },
-		{ id: 4 },
+		{ id: 1, name: "Abstract line drawing" },
+		{ id: 2, name: "Detailed B&W drawing" },
+		{ id: 3, name: "High-detail photo (#1)" },
+		{ id: 4, name: "High-detail photo (#2)" },
 	];
 	let descriptions = [
 		{ id: 1, name: "Short", text: "This study shows that people prefer and perform better with larger or medium-sized widgets, such as radio buttons, which provide feedback to the user. Designers should take this into account when designing widgets for touch screen interfaces of mobile devices." },
@@ -18,50 +24,76 @@
 		
 	];
 	var title_selection = titles[0];
+	var design_implication_selection = design_implications[0];
 	var image_selection = images[0];
 	var description_selection = descriptions[0];
 </script>
 
 <svelte:head>
-	<title>Home</title>
-	<meta name="description" content="Svelte demo app" />
+	<title>Design card demo</title>
+	<meta name="description" content="Design cards" />
 </svelte:head>
 
 <section>
-	<select bind:value={title_selection}>
-		{#each titles as title}
-			<option value={title}>
-				{title.name} title
-			</option>
-		{/each}
-	</select>
-	<select bind:value={image_selection}>
-		{#each images as image}
-			<option value={image}>
-				Image {image.id}
-			</option>
-		{/each}
-	</select>
-	<select bind:value={description_selection}>
-		{#each descriptions as description}
-			<option value={description}>
-				{description.name} description
-			</option>
-		{/each}
-	</select>
+	<table>
+		<tr>
+		  <th>Title</th>
+		  <th>Design implication</th>
+		  <th>Image</th>
+		  <th>Description</th>
+		</tr>
+		<tr>
+		  <td>
+			<select bind:value={title_selection}>
+				{#each titles as title}
+					<option value={title}>
+						{title.name} title
+					</option>
+				{/each}
+			</select>
+		  </td>
+		  <td>
+			<select bind:value={design_implication_selection}>
+				{#each design_implications as design_implication}
+					<option value={design_implication}>
+						{design_implication.name} design implication
+					</option>
+				{/each}
+			</select>
+		  </td>
+		  <td>
+			<select bind:value={image_selection}>
+				{#each images as image}
+					<option value={image}>
+						{image.name}
+					</option>
+				{/each}
+			</select>
+		  </td>
+		  <td>
+			<select bind:value={description_selection}>
+				{#each descriptions as description}
+					<option value={description}>
+						{description.name} description
+					</option>
+				{/each}
+			</select>
+		  </td>
+		</tr>
+	</table>
 	<div class="card">
 		<h3 class="title">
 			{title_selection.text}
 		</h3>
 		<p class="title-detail">
-			Designers should design widgets that are bigger in size and allow the user to visualize interactions while designing for low-literacy population.
+			{design_implication_selection.text}
 		</p>
 		<div class="paper-info-div">
 		<p class="paper-info-heading">
 			&#9432; What is this study about?
 		</p>
 		<p class="paper-info-detail">
-			This study found that the target low-literacy population preferred larger and medium-sized widgets, as well as radio buttons, when using touch screen interfaces on mobile devices. This suggests that designers should create larger widgets with feedback mechanisms to better accommodate this population.
+			In this study, the authors found that the low-literacy population preferred larger and medium-sized widgets, as well as radio buttons, when using touch screen interfaces on mobile devices. This suggests that designers should create larger widgets with feedback mechanisms to better accommodate this population.
 		</p>
 		</div>
 		<img class="image" src="{image_selection.id}.png">
@@ -152,6 +184,13 @@
 	  text-align: right;
 	  font-style: italic;
 	  line-height: 1.15 !important;
+	}
+	table, th, td {
+		border: 1px solid black;
+		text-align: center;
+		margin-left: auto;
+		margin-right: auto;
+		margin-bottom: 1rem;
 	}
   </style>
   
