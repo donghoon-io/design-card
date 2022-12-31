@@ -6,7 +6,7 @@
 	let reference = [
 		"Chaudry, B. M., Connelly, K. H., Siek, K. A., & Welch, J. L. (2012, January). Mobile interface design for low-literacy populations. In Proceedings of the 2nd ACM SIGHIT international health informatics symposium (pp. 91-100).",
 		"McNally, B., Kumar, P., Hordatt, C., Mauriello, M. L., Naik, S., Norooz, L., ... & Druin, A. (2018, April). Co-designing mobile online safety applications with children. In Proceedings of the 2018 CHI Conference on Human Factors in Computing Systems (pp. 1-9).",
-		"Paper 3 reference"
+		"Schneider, T., Hois, J., Rosenstein, A., Ghellal, S., Theofanou-Fülbier, D., & Gerlicher, A. R. (2021, May). Explain yourself! transparency for positive ux in autonomous driving. In Proceedings of the 2021 CHI Conference on Human Factors in Computing Systems (pp. 1-12)."
 	]
 
 	let paper_infos = [
@@ -189,19 +189,19 @@
 					<Row>
 						<label>
 							<input type="radio" bind:group={paper} name="paper" value={0}/>
-							Mobile interface design for low-literacy populations
+							Mobile interface design for low-literacy populations <a href="https://dl.acm.org/doi/abs/10.1145/2110363.2110377">[Link]</a>
 						</label>
 					</Row>
 					<Row>
 						<label>
 							<input type="radio" bind:group={paper} name="paper" value={1} />
-							Co-designing mobile online safety applications with children
+							Co-designing mobile online safety applications with children <a href="https://dl.acm.org/doi/abs/10.1145/3173574.3174097">[Link]</a>
 						</label>
 					</Row>
 					<Row>
 						<label>
 							<input type="radio" bind:group={paper} name="paper" value={2} />
-							Paper 3
+							Transparency for positive UX in autonomous driving <a href="https://dl.acm.org/doi/abs/10.1145/3411764.3446647">[Link]</a>
 						</label>
 					</Row>
 					</td>
