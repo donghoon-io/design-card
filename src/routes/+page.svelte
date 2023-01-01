@@ -11,8 +11,8 @@
 
 	let paper_infos = [
 		"In this study, the authors found that the low-literacy population preferred larger and medium-sized widgets, as well as radio buttons, when using touch screen interfaces on mobile devices. This suggests that designers should create larger widgets with feedback mechanisms to better accommodate this population.",
-		"Paper 2 info",
-		"Paper 3 info"
+		"The authors conducted two co-design sessions with 12 children to investigate their perceptions of parental mobile monitoring technologies and explore their interaction preferences. The results showed that children accepted certain parental controls, and preferred controls that emphasized restriction, taught risk coping, and automated interactions.",
+		"The authors evaluated the effects of transparency on the UX of autonomous driving, and found that explanations during/after the ride can help mitigate negative user experience. They contribute an initial guideline for autonomous driving experience design, combining the areas of UX, explainable AI, and autonomous driving."
 	]
 
 	let titles = [
@@ -36,18 +36,18 @@
 		],
 		[
 			{
-				text: "Paper 2 gerund",
+				text: "Balancing parental mobile monitoring",
 				name: "Gerund format",
 			},
 			{
-				text: "Paper 2 verb",
+				text: "Balance monitoring and child's privacy",
 				name: "Verb format",
 			},
 			{
-				text: "Paper 2 noun",
+				text: "Parental mobile monitoring",
 				name: "Short noun" },
 			{
-				text: "Paper 2 noun",
+				text: "Balance between monitoring and the privacy of children",
 				name: "Long noun",
 			}
 		],
@@ -87,15 +87,15 @@
 		[
 			{
 				name: "Short",
-				text: "Paper 2 short design implication",
+				text: "Parental mobile monitoring apps should restrict monitoring or actively incorporate (semi-)automated monitoring",
 			},
 			{
 				name: "Mid-length",
-				text: "Paper 2 mid-length design implication",
+				text: "Parental mobile monitoring applications should restrict monitoring or actively incorporate semi-automated/automated monitoring to help protect children's privacy.",
 			},
 			{
 				name: "Long",
-				text: "Paper 2 long design implication",
+				text: "Parental mobile monitoring applications should emphasize the use of restriction over monitoring features and incorporate automated or semi-automated monitoring approaches to help protect children while maintaining a layer of privacy.",
 			},
 		],
 		[
@@ -138,16 +138,16 @@
 		[
 			{
 				name: "Short",
-				text: "Paper 2 short description",
+				text: "Parental mobile monitoring applications should emphasize the use of restriction over monitoring features and incorporate automated or semi-automated approaches in order to protect children while maintaining a layer of privacy and offering time savings for parents.",
 			},
 			{
 				name: "Long",
-				text: "Paper 2 long description",
+				text: "Children's designs for parental mobile monitoring applications emphasize the use of restriction over monitoring features, as well as automated or semi-automated monitoring approaches to help protect children while maintaining a layer of privacy. These approaches could create congruence between mobile monitoring activities and the highly varied ways families manage technology use.",
 			},
 			{
 				name: "Reference",
-				text: "Paper 2 reference description",
-				page: "N"
+				text: "Children’s designs incorporated automatic interventions across features focused on both self-regulation and parental control. For instance, children designed features for the automatic restriction of contacts when a threat was encountered, a task usually designated to parents: “So, if somebody says a bad word [the app] will automatically say, ‘This person said a bad word. He or she will be blocked so that person can’t talk with you anymore’” (P9).",
+				page: "523"
 			},
 		],
 		[
