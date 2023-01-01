@@ -53,18 +53,18 @@
 		],
 		[
 			{
-				text: "Paper 3 gerund",
+				text: "Explaining ride to improve UX",
 				name: "Gerund format",
 			},
 			{
-				text: "Paper 3 verb",
+				text: "Explain driving environment real-time to improve UX",
 				name: "Verb format",
 			},
 			{
-				text: "Paper 3 short noun",
+				text: "Live explanation of rides",
 				name: "Short noun" },
 			{
-				text: "Paper 3 long noun",
+				text: "Explanation of rides in a real-time which can improve UX",
 				name: "Long noun",
 			}
 		]
@@ -101,15 +101,15 @@
 		[
 			{
 				name: "Short",
-				text: "Paper 3 short design implication",
+				text: "Live explanations should be provided to help neutralize the negative effects on the UX.",
 			},
 			{
 				name: "Mid-length",
-				text: "Paper 3 mid-length design implication",
+				text: "Live explanations should be provided to neutralise the possible negative effects of autonomous driving on the user experience.",
 			},
 			{
 				name: "Long",
-				text: "Paper 3 long design implication",
+				text: "Live explanations of the driving should be provided to passengers in order to neutralise the possible negative effects autonomous driving has on the user experience.",
 			},
 		]
 	];
@@ -153,16 +153,16 @@
 		[
 			{
 				name: "Short",
-				text: "Paper 3 short description",
+				text: "Providing live explanations during an autonomous driving scenario had a positive effect on the user experience, while the mobile application afterwards had a different effect depending on whether the passengers had received the live explanations or not.",
 			},
 			{
 				name: "Long",
-				text: "Paper 3 long description",
+				text: "The effects of system explanations on the user experience in an autonomous driving scenario was investigated, suggesting that live explanations were sufficient to neutralise the negative effects on the UX. Additionally, the mobile application after the drive was found to be beneficial for those with no live explanations.",
 			},
 			{
 				name: "Reference",
-				text: "Paper 3 reference description",
-				page: "N"
+				text: "Participants rated the drive without live explanations (Adrive) with a neutral PQ (M=-0.59, α=0.67), a negative HQ (M=-1.41, α=0.88) leading to a negative overall score (M=-1.00). They rated the mobile application after the drive without live explanations (Aapp) with a neutral PQ (M=0.06, α=0.55) and a neutral HQ (M=- 0.26, α=0.86) leading to a neutral overall score (M=-0.08). For the drive with live explanations (Bdrive) participants evaluated the PQ (M=0.18, α=0.89) and the HQ as neutral (M=-0.51, α=0.71) which resulted in a neutral overall score (M=-0.17). The mobile application after the drive with explanations (Bapp) was rated with a neutral PQ (M=0.30, α=0.90), a neutral HQ (M=-0.50, (α=0.89) and a neutral overallscore (M=-0.10) by the participants.",
+				page: "7"
 			},
 		]
 	];
