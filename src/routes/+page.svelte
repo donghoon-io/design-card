@@ -179,7 +179,7 @@
 
 <Container>
 	<Row>
-		<Col xs="12" sm="6">
+		<Col xs="12" sm="4" md="6">
 			<table>
 				<tr>
 					<th>Paper</th>
@@ -266,7 +266,7 @@
 				</tr>
 			</table>
 		</Col>
-		<Col xs="12" sm="6">
+		<Col xs="12" sm="8" md="6">
 			<div class="card">
 				<h3 class="title">
 					{title_selection.text}
