@@ -109,10 +109,10 @@ export let design_implications = [
     ]
 ];
 export let images = [
-    { value: 1, name: "Abstract line drawing" },
-    { value: 2, name: "Detailed B&W drawing" },
-    { value: 3, name: "High-detail photo (#1)" },
-    { value: 4, name: "High-detail photo (#2)" }
+    { value: 1, name: "B&W - Abstract" },
+    { value: 2, name: "B&W - Realistic" },
+    { value: 3, name: "Color - Abstract" },
+    { value: 4, name: "Color - Realistic" }
 ];
 
 export let descriptions = [
