@@ -102,7 +102,7 @@
 					</p>
 				</div>
 				<img class="image" src="{paper}-{image_selection}.png" />
-				{#if description_selection != 3}
+				{#if description_selection != 1}
 					<p class="description">
 						{descriptions[paper][description_selection-1].text}
 					</p>
