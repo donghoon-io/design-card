@@ -21,164 +21,159 @@
 			<table>
 				<tr>
 					<td>
-						<Label>Select paper
-							<Container>
-								<Row class="mt-1 gx-2 gy-1 text-center">
-									<Col xs="12" md="4">
-										<Radio name="paper" bind:group={paper} custom value={0}>
-											<div class="px-3 py-2 cursor-pointer rounded-lg border border-gray-200 peer-checked:text-blue-600 bg-white text-gray-500 hover:text-gray-800 w-full">
-												<p class="mb-0 lh-sm">Mobile interface design for low-literacy populations</p>
-											</div>
-										</Radio>
-									</Col>
-									<Col xs="12" md="4">
-										<Radio name="paper" bind:group={paper} custom value={1}>
-											<div class="px-3 py-2 cursor-pointer rounded-lg border border-gray-200 peer-checked:text-blue-600 bg-white text-gray-500 hover:text-gray-800 w-full">
-												<p class="mb-0 lh-sm">Co-designing mobile online safety applications with children</p>
-											</div>
-										</Radio>
-									</Col>
-									<Col xs="12" md="4">
-										<Radio name="paper" bind:group={paper} custom value={2}>
-											<div class="px-3 py-2 cursor-pointer rounded-lg border border-gray-200 peer-checked:text-blue-600 bg-white text-gray-500 hover:text-gray-800 w-full">
-												<p class="mb-0 lh-sm">Transparency for positive UX in autonomous driving</p>
-											</div>
-										</Radio>
-									</Col>
-								</Row>
-							</Container>
-						</Label>
+						<Container>
+							<Label>Select paper</Label>
+							<Row class="mt-1 gx-2 gy-1 text-center">
+								<Col xs="12" md="4">
+									<Radio name="paper" bind:group={paper} custom value={0}>
+										<div class="px-3 py-2 cursor-pointer rounded-lg border border-gray-200 peer-checked:text-blue-600 bg-white text-gray-500 hover:text-gray-800 w-full">
+											<p class="mb-0 lh-sm">Mobile interface design for low-literacy populations</p>
+										</div>
+									</Radio>
+								</Col>
+								<Col xs="12" md="4">
+									<Radio name="paper" bind:group={paper} custom value={1}>
+										<div class="px-3 py-2 cursor-pointer rounded-lg border border-gray-200 peer-checked:text-blue-600 bg-white text-gray-500 hover:text-gray-800 w-full">
+											<p class="mb-0 lh-sm">Co-designing mobile online safety applications with children</p>
+										</div>
+									</Radio>
+								</Col>
+								<Col xs="12" md="4">
+									<Radio name="paper" bind:group={paper} custom value={2}>
+										<div class="px-3 py-2 cursor-pointer rounded-lg border border-gray-200 peer-checked:text-blue-600 bg-white text-gray-500 hover:text-gray-800 w-full">
+											<p class="mb-0 lh-sm">Transparency for positive UX in autonomous driving</p>
+										</div>
+									</Radio>
+								</Col>
+							</Row>
+						</Container>
 					</td>
 				</tr>
 				<tr>
 					<td>
-						<Label>Select title style
-							<Container>
-								<Row class="mt-1 gx-2 gy-1 text-center">
-									<Col xs="6" md="3">
-										<Radio name="title_selection" bind:group={title_selection} custom value={0}>
-											<div class="px-3 py-2 cursor-pointer rounded-lg border border-gray-200 peer-checked:text-blue-600 bg-white text-gray-500 hover:text-gray-800 w-full">
-												<p class="mb-0 lh-sm">Gerund format</p>
-											</div>
-										</Radio>
-									</Col>
-									<Col xs="6" md="3">
-										<Radio name="title_selection" bind:group={title_selection} custom value={1}>
-											<div class="px-3 py-2 cursor-pointer rounded-lg border border-gray-200 peer-checked:text-blue-600 bg-white text-gray-500 hover:text-gray-800 w-full">
-												<p class="mb-0 lh-sm">Verb format</p>
-											</div>
-										</Radio>
-									</Col>
-									<Col xs="6" md="3">
-										<Radio name="title_selection" bind:group={title_selection} custom value={2}>
-											<div class="px-3 py-2 cursor-pointer rounded-lg border border-gray-200 peer-checked:text-blue-600 bg-white text-gray-500 hover:text-gray-800 w-full">
-												<p class="mb-0 lh-sm">Short noun</p>
-											</div>
-										</Radio>
-									</Col>
-									<Col xs="6" md="3">
-										<Radio name="title_selection" bind:group={title_selection} custom value={3}>
-											<div class="px-3 py-2 cursor-pointer rounded-lg border border-gray-200 peer-checked:text-blue-600 bg-white text-gray-500 hover:text-gray-800 w-full">
-												<p class="mb-0 lh-sm">Long noun</p>
-											</div>
-										</Radio>
-									</Col>
-								</Row>
-							</Container>
-						</Label>
+						<Container>
+							<Label>Select title style</Label>
+							<Row class="mt-1 gx-2 gy-1 text-center">
+								<Col xs="6" md="3">
+									<Radio name="title_selection" bind:group={title_selection} custom value={0}>
+										<div class="px-3 py-2 cursor-pointer rounded-lg border border-gray-200 peer-checked:text-blue-600 bg-white text-gray-500 hover:text-gray-800 w-full">
+											<p class="mb-0 lh-sm">Gerund format</p>
+										</div>
+									</Radio>
+								</Col>
+								<Col xs="6" md="3">
+									<Radio name="title_selection" bind:group={title_selection} custom value={1}>
+										<div class="px-3 py-2 cursor-pointer rounded-lg border border-gray-200 peer-checked:text-blue-600 bg-white text-gray-500 hover:text-gray-800 w-full">
+											<p class="mb-0 lh-sm">Verb format</p>
+										</div>
+									</Radio>
+								</Col>
+								<Col xs="6" md="3">
+									<Radio name="title_selection" bind:group={title_selection} custom value={2}>
+										<div class="px-3 py-2 cursor-pointer rounded-lg border border-gray-200 peer-checked:text-blue-600 bg-white text-gray-500 hover:text-gray-800 w-full">
+											<p class="mb-0 lh-sm">Short noun</p>
+										</div>
+									</Radio>
+								</Col>
+								<Col xs="6" md="3">
+									<Radio name="title_selection" bind:group={title_selection} custom value={3}>
+										<div class="px-3 py-2 cursor-pointer rounded-lg border border-gray-200 peer-checked:text-blue-600 bg-white text-gray-500 hover:text-gray-800 w-full">
+											<p class="mb-0 lh-sm">Long noun</p>
+										</div>
+									</Radio>
+								</Col>
+							</Row>
+						</Container>
 					</td>
 				</tr>
 				<tr>
 					<td>
-						<Label>Select design implication style
-							<Container>
-								<Row class="mt-1 gx-2 gy-1 text-center">
-									<Col xs="4" md="4">
-										<Radio name="design_implication_selection" bind:group={design_implication_selection} custom value={0}>
-											<div class="px-3 py-2 cursor-pointer rounded-lg border border-gray-200 peer-checked:text-blue-600 bg-white text-gray-500 hover:text-gray-800 w-full">
-												<p class="mb-0 lh-sm">Short</p>
-											</div>
-										</Radio>
-									</Col>
-									<Col xs="4" md="4">
-										<Radio name="design_implication_selection" bind:group={design_implication_selection} custom value={1}>
-											<div class="px-3 py-2 cursor-pointer rounded-lg border border-gray-200 peer-checked:text-blue-600 bg-white text-gray-500 hover:text-gray-800 w-full">
-												<p class="mb-0 lh-sm">Mid-length</p>
-											</div>
-										</Radio>
-									</Col>
-									<Col xs="4" md="4">
-										<Radio name="design_implication_selection" bind:group={design_implication_selection} custom value={2}>
-											<div class="px-3 py-2 cursor-pointer rounded-lg border border-gray-200 peer-checked:text-blue-600 bg-white text-gray-500 hover:text-gray-800 w-full">
-												<p class="mb-0 lh-sm">Long</p>
-											</div>
-										</Radio>
-									</Col>
-								</Row>
-							</Container>
-						</Label>
+						<Container>
+							<Label>Select design implication style</Label>
+							<Row class="mt-1 gx-2 gy-1 text-center">
+								<Col xs="4" md="4">
+									<Radio name="design_implication_selection" bind:group={design_implication_selection} custom value={0}>
+										<div class="px-3 py-2 cursor-pointer rounded-lg border border-gray-200 peer-checked:text-blue-600 bg-white text-gray-500 hover:text-gray-800 w-full">
+											<p class="mb-0 lh-sm">Short</p>
+										</div>
+									</Radio>
+								</Col>
+								<Col xs="4" md="4">
+									<Radio name="design_implication_selection" bind:group={design_implication_selection} custom value={1}>
+										<div class="px-3 py-2 cursor-pointer rounded-lg border border-gray-200 peer-checked:text-blue-600 bg-white text-gray-500 hover:text-gray-800 w-full">
+											<p class="mb-0 lh-sm">Mid-length</p>
+										</div>
+									</Radio>
+								</Col>
+								<Col xs="4" md="4">
+									<Radio name="design_implication_selection" bind:group={design_implication_selection} custom value={2}>
+										<div class="px-3 py-2 cursor-pointer rounded-lg border border-gray-200 peer-checked:text-blue-600 bg-white text-gray-500 hover:text-gray-800 w-full">
+											<p class="mb-0 lh-sm">Long</p>
+										</div>
+									</Radio>
+								</Col>
+							</Row>
+						</Container>
 					</td>
 				</tr>
 				<tr>
 					<td>
-						<Label>Select image style
-							<Container>
-								<Row class="mt-1 gx-2 gy-1 text-center">
-									<Col xs="6" md="3">
-										<Radio name="image_selection" bind:group={image_selection} custom value={0}>
-											<div class="px-3 py-2 cursor-pointer rounded-lg border border-gray-200 peer-checked:text-blue-600 bg-white text-gray-500 hover:text-gray-800 w-full">
-												<p class="mb-0 lh-sm">B&W - abstract</p>
-											</div>
-										</Radio>
-									</Col>
-									<Col xs="6" md="3">
-										<Radio name="image_selection" bind:group={image_selection} custom value={1}>
-											<div class="px-3 py-2 cursor-pointer rounded-lg border border-gray-200 peer-checked:text-blue-600 bg-white text-gray-500 hover:text-gray-800 w-full">
-												<p class="mb-0 lh-sm">B&W - realistic</p>
-											</div>
-										</Radio>
-									</Col>
-									<Col xs="6" md="3">
-										<Radio name="image_selection" bind:group={image_selection} custom value={2}>
-											<div class="px-3 py-2 cursor-pointer rounded-lg border border-gray-200 peer-checked:text-blue-600 bg-white text-gray-500 hover:text-gray-800 w-full">
-												<p class="mb-0 lh-sm">Color - abstract</p>
-											</div>
-										</Radio>
-									</Col>
-									<Col xs="6" md="3">
-										<Radio name="image_selection" bind:group={image_selection} custom value={3}>
-											<div class="px-3 py-2 cursor-pointer rounded-lg border border-gray-200 peer-checked:text-blue-600 bg-white text-gray-500 hover:text-gray-800 w-full">
-												<p class="mb-0 lh-sm">Color - realistic</p>
-											</div>
-										</Radio>
-									</Col>
-								</Row>
-							</Container>
-						</Label>
+						<Container>
+							<Label>Select image style</Label>
+							<Row class="mt-1 gx-2 gy-1 text-center">
+								<Col xs="6" md="3">
+									<Radio name="image_selection" bind:group={image_selection} custom value={0}>
+										<div class="px-3 py-2 cursor-pointer rounded-lg border border-gray-200 peer-checked:text-blue-600 bg-white text-gray-500 hover:text-gray-800 w-full">
+											<p class="mb-0 lh-sm">B&W - abstract</p>
+										</div>
+									</Radio>
+								</Col>
+								<Col xs="6" md="3">
+									<Radio name="image_selection" bind:group={image_selection} custom value={1}>
+										<div class="px-3 py-2 cursor-pointer rounded-lg border border-gray-200 peer-checked:text-blue-600 bg-white text-gray-500 hover:text-gray-800 w-full">
+											<p class="mb-0 lh-sm">B&W - realistic</p>
+										</div>
+									</Radio>
+								</Col>
+								<Col xs="6" md="3">
+									<Radio name="image_selection" bind:group={image_selection} custom value={2}>
+										<div class="px-3 py-2 cursor-pointer rounded-lg border border-gray-200 peer-checked:text-blue-600 bg-white text-gray-500 hover:text-gray-800 w-full">
+											<p class="mb-0 lh-sm">Color - abstract</p>
+										</div>
+									</Radio>
+								</Col>
+								<Col xs="6" md="3">
+									<Radio name="image_selection" bind:group={image_selection} custom value={3}>
+										<div class="px-3 py-2 cursor-pointer rounded-lg border border-gray-200 peer-checked:text-blue-600 bg-white text-gray-500 hover:text-gray-800 w-full">
+											<p class="mb-0 lh-sm">Color - realistic</p>
+										</div>
+									</Radio>
+								</Col>
+							</Row>
+						</Container>
 					</td>
 				</tr>
 				<tr>
 					<td>
-						<Label>Select description style
-							<Container>
-								<Row class="mt-1 gx-2 gy-1 text-center">
-									<Col xs="6">
-										<Radio name="description_selection" bind:group={description_selection} custom value={0}>
-											<div class="px-3 py-2 cursor-pointer rounded-lg border border-gray-200 peer-checked:text-blue-600 bg-white text-gray-500 hover:text-gray-800 w-full">
-												<p class="mb-0 lh-sm">Reference</p>
-											</div>
-										</Radio>
-									</Col>
-									<Col xs="6">
-										<Radio name="description_selection" bind:group={description_selection} custom value={1}>
-											<div class="px-3 py-2 cursor-pointer rounded-lg border border-gray-200 peer-checked:text-blue-600 bg-white text-gray-500 hover:text-gray-800 w-full">
-												<p class="mb-0 lh-sm">Description</p>
-											</div>
-										</Radio>
-									</Col>
-								</Row>
-							</Container>
-						</Label>
+						<Container>
+							<Label>Select description style</Label>
+							<Row class="mt-1 gx-2 gy-1 text-center">
+								<Col xs="6">
+									<Radio name="description_selection" bind:group={description_selection} custom value={0}>
+										<div class="px-3 py-2 cursor-pointer rounded-lg border border-gray-200 peer-checked:text-blue-600 bg-white text-gray-500 hover:text-gray-800 w-full">
+											<p class="mb-0 lh-sm">Reference</p>
+										</div>
+									</Radio>
+								</Col>
+								<Col xs="6">
+									<Radio name="description_selection" bind:group={description_selection} custom value={1}>
+										<div class="px-3 py-2 cursor-pointer rounded-lg border border-gray-200 peer-checked:text-blue-600 bg-white text-gray-500 hover:text-gray-800 w-full">
+											<p class="mb-0 lh-sm">Description</p>
+										</div>
+									</Radio>
+								</Col>
+							</Row>
+						</Container>
 					</td>
 				</tr>
 			</table>
