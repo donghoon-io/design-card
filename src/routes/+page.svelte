@@ -1,14 +1,13 @@
 <script>
 	import { Row, Col, Container } from "sveltestrap";
   	import { Select, Label, Radio } from 'flowbite-svelte';
-  	import { reference, paper_infos, titles, design_implications, images, descriptions } from './data'
+  	import { reference, paper_infos, titles, design_implications, descriptions } from './data'
   
-	let paper = 0;
-	
-	$: title_selection = titles[paper][0].value;
-	$: design_implication_selection = design_implications[paper][0].value;
-	$: image_selection = images[0].value;
-	$: description_selection = descriptions[paper][0].value;
+	$: paper = 0;
+	$: title_selection = 0;
+	$: design_implication_selection = 0;
+	$: image_selection = 0;
+	$: description_selection = 0;
 </script>
 
 <svelte:head>
@@ -23,63 +22,162 @@
 				<tr>
 					<td>
 						<Label>Select paper
-							<Row class="mt-1 gx-2 gy-1 text-center">
-								<Col xs="12" md="4" class="inline-flex">
-									<Col xs="12" class="inline-flex px-3 py-2 cursor-pointer rounded-lg border border-gray-200 peer-checked:border-blue-200 hover:bg-gray-100">
+							<Container>
+								<Row class="mt-1 gx-2 gy-1 text-center">
+									<Col xs="12" md="4">
 										<Radio name="paper" bind:group={paper} custom value={0}>
-											<div class="block cursor-pointer peer-checked:text-blue-600 text-gray-500 hover:text-gray-800">
+											<div class="px-3 py-2 cursor-pointer rounded-lg border border-gray-200 peer-checked:text-blue-600 bg-white text-gray-500 hover:text-gray-800 w-full">
 												<p class="mb-0 lh-sm">Mobile interface design for low-literacy populations</p>
 											</div>
 										</Radio>
 									</Col>
-								</Col>
-								<Col xs="12" md="4" class="inline-flex">
-									<Col xs="12" class="inline-flex px-3 py-2 cursor-pointer rounded-lg border border-gray-200 peer-checked:border-blue-200 hover:bg-gray-100">
+									<Col xs="12" md="4">
 										<Radio name="paper" bind:group={paper} custom value={1}>
-											<div class="block cursor-pointer peer-checked:text-blue-600 text-gray-500 hover:text-gray-800">
+											<div class="px-3 py-2 cursor-pointer rounded-lg border border-gray-200 peer-checked:text-blue-600 bg-white text-gray-500 hover:text-gray-800 w-full">
 												<p class="mb-0 lh-sm">Co-designing mobile online safety applications with children</p>
 											</div>
 										</Radio>
 									</Col>
-								</Col>
-								<Col xs="12" md="4" class="inline-flex">
-									<Col xs="12" class="inline-flex px-3 py-2 cursor-pointer rounded-lg border border-gray-200 peer-checked:border-blue-200 hover:bg-gray-100">
+									<Col xs="12" md="4">
 										<Radio name="paper" bind:group={paper} custom value={2}>
-											<div class="block cursor-pointer peer-checked:text-blue-600 text-gray-500 hover:text-gray-800">
+											<div class="px-3 py-2 cursor-pointer rounded-lg border border-gray-200 peer-checked:text-blue-600 bg-white text-gray-500 hover:text-gray-800 w-full">
 												<p class="mb-0 lh-sm">Transparency for positive UX in autonomous driving</p>
 											</div>
 										</Radio>
 									</Col>
-								</Col>
-							</Row>
+								</Row>
+							</Container>
 						</Label>
 					</td>
 				</tr>
 				<tr>
 					<td>
 						<Label>Select title style
-							<Select class="mt-2" items={titles[paper]} bind:value={title_selection} />
+							<Container>
+								<Row class="mt-1 gx-2 gy-1 text-center">
+									<Col xs="6" md="3">
+										<Radio name="title_selection" bind:group={title_selection} custom value={0}>
+											<div class="px-3 py-2 cursor-pointer rounded-lg border border-gray-200 peer-checked:text-blue-600 bg-white text-gray-500 hover:text-gray-800 w-full">
+												<p class="mb-0 lh-sm">Gerund format</p>
+											</div>
+										</Radio>
+									</Col>
+									<Col xs="6" md="3">
+										<Radio name="title_selection" bind:group={title_selection} custom value={1}>
+											<div class="px-3 py-2 cursor-pointer rounded-lg border border-gray-200 peer-checked:text-blue-600 bg-white text-gray-500 hover:text-gray-800 w-full">
+												<p class="mb-0 lh-sm">Verb format</p>
+											</div>
+										</Radio>
+									</Col>
+									<Col xs="6" md="3">
+										<Radio name="title_selection" bind:group={title_selection} custom value={2}>
+											<div class="px-3 py-2 cursor-pointer rounded-lg border border-gray-200 peer-checked:text-blue-600 bg-white text-gray-500 hover:text-gray-800 w-full">
+												<p class="mb-0 lh-sm">Short noun</p>
+											</div>
+										</Radio>
+									</Col>
+									<Col xs="6" md="3">
+										<Radio name="title_selection" bind:group={title_selection} custom value={3}>
+											<div class="px-3 py-2 cursor-pointer rounded-lg border border-gray-200 peer-checked:text-blue-600 bg-white text-gray-500 hover:text-gray-800 w-full">
+												<p class="mb-0 lh-sm">Long noun</p>
+											</div>
+										</Radio>
+									</Col>
+								</Row>
+							</Container>
 						</Label>
 					</td>
 				</tr>
 				<tr>
 					<td>
 						<Label>Select design implication style
-							<Select class="mt-2" items={design_implications[paper]} bind:value={design_implication_selection} />
+							<Container>
+								<Row class="mt-1 gx-2 gy-1 text-center">
+									<Col xs="4" md="4">
+										<Radio name="design_implication_selection" bind:group={design_implication_selection} custom value={0}>
+											<div class="px-3 py-2 cursor-pointer rounded-lg border border-gray-200 peer-checked:text-blue-600 bg-white text-gray-500 hover:text-gray-800 w-full">
+												<p class="mb-0 lh-sm">Short</p>
+											</div>
+										</Radio>
+									</Col>
+									<Col xs="4" md="4">
+										<Radio name="design_implication_selection" bind:group={design_implication_selection} custom value={1}>
+											<div class="px-3 py-2 cursor-pointer rounded-lg border border-gray-200 peer-checked:text-blue-600 bg-white text-gray-500 hover:text-gray-800 w-full">
+												<p class="mb-0 lh-sm">Mid-length</p>
+											</div>
+										</Radio>
+									</Col>
+									<Col xs="4" md="4">
+										<Radio name="design_implication_selection" bind:group={design_implication_selection} custom value={2}>
+											<div class="px-3 py-2 cursor-pointer rounded-lg border border-gray-200 peer-checked:text-blue-600 bg-white text-gray-500 hover:text-gray-800 w-full">
+												<p class="mb-0 lh-sm">Long</p>
+											</div>
+										</Radio>
+									</Col>
+								</Row>
+							</Container>
 						</Label>
 					</td>
 				</tr>
 				<tr>
 					<td>
 						<Label>Select image style
-							<Select class="mt-2" items={images} bind:value={image_selection} />
+							<Container>
+								<Row class="mt-1 gx-2 gy-1 text-center">
+									<Col xs="6" md="3">
+										<Radio name="image_selection" bind:group={image_selection} custom value={0}>
+											<div class="px-3 py-2 cursor-pointer rounded-lg border border-gray-200 peer-checked:text-blue-600 bg-white text-gray-500 hover:text-gray-800 w-full">
+												<p class="mb-0 lh-sm">B&W - abstract</p>
+											</div>
+										</Radio>
+									</Col>
+									<Col xs="6" md="3">
+										<Radio name="image_selection" bind:group={image_selection} custom value={1}>
+											<div class="px-3 py-2 cursor-pointer rounded-lg border border-gray-200 peer-checked:text-blue-600 bg-white text-gray-500 hover:text-gray-800 w-full">
+												<p class="mb-0 lh-sm">B&W - realistic</p>
+											</div>
+										</Radio>
+									</Col>
+									<Col xs="6" md="3">
+										<Radio name="image_selection" bind:group={image_selection} custom value={2}>
+											<div class="px-3 py-2 cursor-pointer rounded-lg border border-gray-200 peer-checked:text-blue-600 bg-white text-gray-500 hover:text-gray-800 w-full">
+												<p class="mb-0 lh-sm">Color - abstract</p>
+											</div>
+										</Radio>
+									</Col>
+									<Col xs="6" md="3">
+										<Radio name="image_selection" bind:group={image_selection} custom value={3}>
+											<div class="px-3 py-2 cursor-pointer rounded-lg border border-gray-200 peer-checked:text-blue-600 bg-white text-gray-500 hover:text-gray-800 w-full">
+												<p class="mb-0 lh-sm">Color - realistic</p>
+											</div>
+										</Radio>
+									</Col>
+								</Row>
+							</Container>
 						</Label>
 					</td>
 				</tr>
 				<tr>
 					<td>
 						<Label>Select description style
-							<Select class="mt-2" items={descriptions[paper]} bind:value={description_selection} />
+							<Container>
+								<Row class="mt-1 gx-2 gy-1 text-center">
+									<Col xs="6">
+										<Radio name="description_selection" bind:group={description_selection} custom value={0}>
+											<div class="px-3 py-2 cursor-pointer rounded-lg border border-gray-200 peer-checked:text-blue-600 bg-white text-gray-500 hover:text-gray-800 w-full">
+												<p class="mb-0 lh-sm">Reference</p>
+											</div>
+										</Radio>
+									</Col>
+									<Col xs="6">
+										<Radio name="description_selection" bind:group={description_selection} custom value={1}>
+											<div class="px-3 py-2 cursor-pointer rounded-lg border border-gray-200 peer-checked:text-blue-600 bg-white text-gray-500 hover:text-gray-800 w-full">
+												<p class="mb-0 lh-sm">Description</p>
+											</div>
+										</Radio>
+									</Col>
+								</Row>
+							</Container>
 						</Label>
 					</td>
 				</tr>
@@ -88,10 +186,10 @@
 		<Col xs="12" sm="8" md="6" class="mt-3 mt-sm-0">
 			<div class="card">
 				<h3 class="title">
-					{title_selection}
+					{titles[paper][title_selection]}
 				</h3>
 				<p class="title-detail">
-					{design_implication_selection}
+					{design_implications[paper][design_implication_selection]}
 				</p>
 				<div class="paper-info-div">
 					<p class="paper-info-heading">
@@ -102,9 +200,9 @@
 					</p>
 				</div>
 				<img class="image" src="{paper}-{image_selection}.png" />
-				{#if description_selection != 1}
+				{#if description_selection != 0}
 					<p class="description">
-						{descriptions[paper][description_selection-1].text}
+						{descriptions[paper][description_selection].text}
 					</p>
 				{:else}
 					<div class="description_quote">
@@ -112,7 +210,7 @@
 							&#9432; Where does this come from?
 						</p>
 						<p style="margin: .5rem 0 0 0 !important; line-height: 1.25 !important;">
-							<i>{descriptions[paper][description_selection-1].text}</i> (p. {descriptions[paper][description_selection-1].page})
+							<i>{descriptions[paper][description_selection].text}</i> (p. {descriptions[paper][description_selection].page})
 						</p>
 					</div>
 				{/if}
