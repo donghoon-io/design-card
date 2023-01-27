@@ -119,39 +119,39 @@ export let descriptions = [
     [
         {
             name: "Reference",
-            text: "Despite the mixed performance, we had a good response from participants on the usefulness of the cross-linked navigation bar. One participant commented, “I would rather use the small pictures on the top to save me from going HOME every time.” Another said, “The tabs were not big enough but they were helpful in giving options.” One more said, “It challenged me to think more about what I was doing.”",
+            text: "“Our main findings were that most participants not only performed the best with radio buttons, but also preferred them over the other widgets. They could find and select target items with any widget when presented with several options. Large sizes of all widgets were not only more efficient than small sizes but also preferred by most participants. In terms of inner page navigation, scrollbars were successfully used.”",
             page: "98",
             value: 1
         },
         {
             name: "Description",
-            text: "Low-literacy population can effectively use GUI widgets and navigation structures on touch screen interfaces. They prefer bigger or medium-sized widgets, and radio buttons work best due to the feedback mechanism. Thus, designers should therefore create widgets that are bigger in size and provide visual feedback to users.",
+            text: "The authors found that radio buttons were the most efficient and preferred widget for selection tasks, while scrollbars were successful for inner page navigation. Additionally, larger sizes of all widgets were more efficient and preferred by participants.",
             value: 2
         },
     ],
     [
         {
             name: "Reference",
-            text: "Children’s designs incorporated automatic interventions across features focused on both self-regulation and parental control. For instance, children designed features for the automatic restriction of contacts when a threat was encountered, a task usually designated to parents: “So, if somebody says a bad word [the app] will automatically say, ‘This person said a bad word. He or she will be blocked so that person can’t talk with you anymore’.” (P9)",
+            text: "“Children’s designs incorporated automatic interventions across features focused on both self-regulation and parental control. For instance, children designed features for the automatic restriction of contacts when a threat was encountered, a task usually designated to parents. Similarly, children removed the need for direct parental monitoring of their activities through designs for automated message filtering.”",
             page: "523",
             value: 1
         },
         {
             name: "Description",
-            text: "Children's designs for parental mobile monitoring applications emphasize the use of restriction over monitoring features, as well as automated or semi-automated monitoring approaches to help protect children while maintaining a layer of privacy. These approaches could create congruence between mobile monitoring activities and the highly varied ways families manage technology use.",
+            text: "The authors found that children designed features for automatic interventions to both self-regulate and control parental access, such as restricting contacts when a threat is encountered and filtering messages. Additionally, these designs removed the need for direct parental monitoring.",
             value: 2
         },
     ],
     [
         {
             name: "Reference",
-            text: "Participants rated the drive without live explanations (Adrive) with a neutral PQ (M=-0.59, α=0.67), a negative HQ (M=-1.41, α=0.88) leading to a negative overall score (M=-1.00). They rated the mobile application after the drive without live explanations (Aapp) with a neutral PQ (M=0.06, α=0.55) and a neutral HQ (M=- 0.26, α=0.86) leading to a neutral overall score (M=-0.08). For the drive with live explanations (Bdrive) participants evaluated the PQ (M=0.18, α=0.89) and the HQ as neutral (M=-0.51, α=0.71) which resulted in a neutral overall score (M=-0.17). The mobile application after the drive with explanations (Bapp) was rated with a neutral PQ (M=0.30, α=0.90), a neutral HQ (M=-0.50, (α=0.89) and a neutral overallscore (M=-0.10) by the participants.",
+            text: "“Participants rated the drive without live explanations (Adrive) with a neutral PQ (M=-0.59, α=0.67), a negative HQ (M=-1.41, α=0.88) leading to a negative overall score (M=-1.00). They rated the mobile application after the drive without live explanations (Aapp) with a neutral PQ (M=0.06, α=0.55) and a neutral HQ (M=- 0.26, α=0.86) leading to a neutral overall score (M=-0.08). For the drive with live explanations (Bdrive) participants evaluated the PQ (M=0.18, α=0.89) and the HQ as neutral (M=-0.51, α=0.71) which resulted in a neutral overall score (M=-0.17). The mobile application after the drive with explanations (Bapp) was rated with a neutral PQ (M=0.30, α=0.90), a neutral HQ (M=-0.50, (α=0.89) and a neutral overallscore (M=-0.10) by the participants.”",
             page: "7",
             value: 1
         },
         {
             name: "Description",
-            text: "The effects of system explanations on the user experience in an autonomous driving scenario was investigated, suggesting that live explanations were sufficient to neutralise the negative effects on the UX. Additionally, the mobile application after the drive was found to be beneficial for those with no live explanations.",
+            text: "The authors found that participants rated the drive without live explanations negatively, while the mobile application after the drive was rated neutrally. The drive with live explanations and the mobile application after the drive were both rated neutrally.",
             value: 2
         },
     ]
